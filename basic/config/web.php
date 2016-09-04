@@ -38,6 +38,9 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+    	'cart' => [
+    		'class' => 'yii2mod\cart\Cart'
+    	],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -48,6 +51,7 @@ $config = [
         */
     ],
     'params' => $params,
+	'modules' => array('shop' => array( 'debug' => 'true')),
 ];
 
 if (YII_ENV_DEV) {
