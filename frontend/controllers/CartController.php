@@ -6,8 +6,9 @@ use common\models\Order;
 use common\models\OrderItem;
 use common\models\Product;
 use yz\shoppingcart\ShoppingCart;
+use yii\web\Controller;
 
-class CartController extends \yii\web\Controller
+class CartController extends Controller
 {
     public function actionAdd($id)
     {
